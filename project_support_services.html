@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SS Contract Consultant</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    body {
+        font-family: Roboto, sans-serif;
+        margin: 0;
+        padding: 0;
+       
+        color: #333;
+    }
+
+    
+
+    h1 {
+        color: #15455D;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        color: #484b4e;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .overview {
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .card {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .icon {
+        font-size: 30px;
+        color: #15455D;
+    }
+
+    .card-content {
+        flex: 1;
+    }
+
+    .card h3 {
+        margin: 0;
+        color: #15455D;
+        font-size: 18px;
+    }
+
+    .card p {
+        margin: 5px 0 0;
+        font-size: 14px;
+        color: #555;
+        line-height: 1.4;
+    }
+    .double-card {
+background-color: #fff;
+border-radius: 12px;
+overflow: hidden;
+border: 3px solid orange; /* Orange Border */
+box-shadow: 0 4px 8px rgba(255, 165, 0, 0.2); /* Subtle Shadow */
+transition: transform 0.3s ease;
+}
+
+.double-card:hover {
+transform: translateY(-5px); /* Hover Effect */
+}
+
+.double-card-inner {
+padding: 30px;
+background-color: #fff;
+}
+
+.feature-icon i {
+font-size: 3.5rem;
+margin-bottom: 20px;
+color: orange;
+}
+
+.feature-title {
+font-size: 1.4rem;
+color: #333;
+margin-bottom: 10px;
+}
+
+.feature-desc {
+color: #666;
+}
+</style>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center border-start border-end px-3">
+                    <small class="fa fa-phone-alt me-2"></small>
+                    <small>+91 72002 66999</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center border-end px-3">
+                    <small class="far fa-envelope-open me-2"></small>
+                    <small>info@sscontractconsultant.com</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center border-end px-3">
+                    <small class="far fa-clock me-2"></small>
+                    <small>Mon - Sat : 09 AM - 09 PM</small>
+                </div>
+            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-square border-end border-start" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square border-end" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square border-end" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-square border-end" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+     <!-- Navbar Start -->
+     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <h3 class="m-0"><i class="fa fa-building text-primary me-3"></i>SS Contract Consultant</h3>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-3 py-lg-0">
+                <a href="index.html" class="nav-item nav-link ">Home</a>
+                <a href="about.html" class="nav-item nav-link">About Us</a>
+                <div class="nav-item dropdown">
+                    <a href="service.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Core Services</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="contract_adminstration_management.html" class="dropdown-item">Contract Administration & Management</a>
+                        <a href="subcontract_administration.html" class="dropdown-item">Subcontract Administration</a>
+                        <a href="claims_delay_analysis.html" class="dropdown-item active">Claims & Delay Analysis</a>
+                        <a href="commercial_quantity_surveying.html" class="dropdown-item">Commercial & Quantity Surveying</a>
+                        <a href="dispute_resolution.html" class="dropdown-item">Dispute Resolution</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="service.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Supplementary Services</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="design_engineering_construction.html" class="dropdown-item ">Design Engineering & Construction</a>
+                        <a href="building_maintenance.html" class="dropdown-item ">Building Maintenance</a>
+                        <a href="construction_manpower_supply.html" class="dropdown-item ">Construction Manpower Supply</a>
+                        <a href="construction_manpower_welfare_facilities.html" class="dropdown-item ">Construction Manpower Welfare Facilities</a>
+                        <a href="project_support_services.html" class="dropdown-item active">Project Support Services</a>
+                        <a href="quality_safety_assurance.html" class="dropdown-item">Quality & Safety Assurance</a>
+                    </div>
+                </div>
+                <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+
+                <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <h1 class="display-4 text-white animated slideInDown mb-4">Project Support Services</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="wow fadeInUp" data-wow-delay="0.1s">
+                <div class="border-start border-5 border-primary ps-4 mb-5">
+                    <h6 class="text-body text-uppercase mb-2">Our Services</h6>
+                    <h1 class="display-6 mb-0" style="text-align: left;">Project Support Services</h1>
+                </div>
+                <p class="mb-5">📊 Providing end-to-end support for smooth project execution.</p>
+            </div>
+    
+ <!-- Support Services -->
+<div class="container my-5">
+    <h2 class="text-primary mb-4" style="text-align: left;">📌 Our Comprehensive Support Services:</h2>
+
+    <div class="row">
+        <!-- Logistics & Material Handling -->
+        <div class="col-md-4 mb-4">
+            <div class="double-card blue-border">
+                <div class="double-card-inner text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck-loading fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="feature-title mt-3">Logistics & Material Handling</h4>
+                    <p class="feature-desc">Ensuring timely delivery of construction materials.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Document Control & Permitting -->
+        <div class="col-md-4 mb-4">
+            <div class="double-card blue-border">
+                <div class="double-card-inner text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-alt fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="feature-title mt-3">Document Control & Permitting</h4>
+                    <p class="feature-desc">Handling regulatory approvals and documentation.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Site Supervision & Management -->
+        <div class="col-md-4 mb-4">
+            <div class="double-card blue-border">
+                <div class="double-card-inner text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-hard-hat fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="feature-title mt-3">Site Supervision & Management</h4>
+                    <p class="feature-desc">Monitoring progress and ensuring compliance.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Planning & Scheduling -->
+        <div class="col-md-4 mb-4">
+            <div class="double-card blue-border">
+                <div class="double-card-inner text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="feature-title mt-3">Project Planning & Scheduling</h4>
+                    <p class="feature-desc">Optimizing timelines for efficiency.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technology Integration -->
+        <div class="col-md-4 mb-4">
+            <div class="double-card blue-border">
+                <div class="double-card-inner text-center">
+                    <div class="feature-icon">
+                        <i class="fas fa-microchip fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="feature-title mt-3">Technology Integration</h4>
+                    <p class="feature-desc">Implementing smart solutions for better coordination.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FontAwesome CDN (Add this in the <head> section of your HTML) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   
+            <!-- Benefits Section -->
+            <div class="benefits-section p-5 mb-5 shadow-lg" style="border-left: 6px solid darkorange; background-color: #f8f9fa; border-radius: 8px;">
+                <h2 class="text-primary mb-4" style="text-align: left;">🚀 Why Our Support Services Matter?</h2>
+    
+                <div class="row">
+                    <!-- Prevents Delays -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card p-4 text-center border-0 shadow-sm" style="border-radius: 10px;">
+                            <i class="fas fa-clock fa-3x text-success mb-3"></i>
+                            <h5 class="text-dark">Prevents Delays</h5>
+                            <p class="text-muted">Ensuring seamless workflow management.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Cost Efficiency -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card p-4 text-center border-0 shadow-sm" style="border-radius: 10px;">
+                            <i class="fas fa-dollar-sign fa-3x text-danger mb-3"></i>
+                            <h5 class="text-dark">Cost Efficiency</h5>
+                            <p class="text-muted">Reducing waste and optimizing resource allocation.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Regulatory Compliance -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card p-4 text-center border-0 shadow-sm" style="border-radius: 10px;">
+                            <i class="fas fa-balance-scale fa-3x text-warning mb-3"></i>
+                            <h5 class="text-dark">Regulatory Compliance</h5>
+                            <p class="text-muted">Avoiding legal and administrative hurdles.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Industry Data -->
+                <div class="testimonial-section mt-4 p-4 text-center shadow-sm" style="background-color: #e3f2fd; border-radius: 8px;">
+                    <i class="fas fa-chart-line fa-2x text-primary mb-2"></i>
+                    <h5 class="text-primary">📊 Industry Data</h5>
+                    <p class="text-dark font-weight-bold">
+                        "Projects with structured support services experience <span class="text-success">20% faster</span> completion rates and lower operational risks."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4"><i class="fa fa-building text-primary me-3"></i>SS Contract Consultant</h5>
+                    <p>Experts in construction consultancy, delivering reliable and cost-effective solutions for 20+ years.</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-primary me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-primary me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-primary me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Core</h4>
+                    <a class="btn btn-link" href="contract_adminstration_management.html">Contract Administration & Management</a>
+                    <a class="btn btn-link" href="subcontract_administration.html">Subcontract Administration</a>
+                    <a class="btn btn-link" href="claims_delay_analysis.html">Claims & Delay Analysis</a>
+                    <a class="btn btn-link" href="commercial_quantity_surveying.html">Commercial & Quantity Surveying</a>
+                    <a class="btn btn-link" href="dispute_resolution.html">Dispute Resolution</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Supplementary</h4>
+                    <a class="btn btn-link" href="design_engineering_construction.html">Design Engineering & Construction</a>
+                    <a class="btn btn-link" href="building_maintenance.html">Building Maintenance</a>
+                    <a class="btn btn-link" href="construction_manpower_supply.html">Construction Manpower Supply</a>
+                    <a class="btn btn-link" href="construction_manpower_welfare_facilities.html">Construction Manpower Welfare Facilities</a>
+                    <a class="btn btn-link" href="project_support_services.html">Project Support Services</a>
+                    <a class="btn btn-link" href="quality_safety_assurance.html">Quality & Safety Assurance</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Address</h4>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>12/6, 2nd Floor, Block – B,Thiruvalluvar 1st St, West K.K. Nagar, Chennai – 600078.</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+91 95519 03776</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+91 72002 66999</p>
+                    <p><i class="fa fa-envelope me-3"></i>info@sscontractconsultant.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#">SS Contract Consultant</a>, All Right Reserved.Designed & Developed by <a href="https://afridiuxdev.github.io/Mohamed-Afridi-Portfolio/">Ux.Afridi</a>. 
+                    </div>
+                    <div class="col-md-6 text-center text-md-end" style="font-size: 2px; opacity: 0.1;">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a href="https://htmlcodex.com" style="color: inherit; text-decoration: none;">HTML Codex</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
